@@ -1,7 +1,8 @@
 # User API
 
 ## Setup
-- Create database then import /database/interview_assigment.sql
+- Create database then import `/database/interview_assigment.sql`
+- Change database setting in `/app/config.php`
 - From project directory run `php -S localhost:9999`
 
 ## Endpoints
