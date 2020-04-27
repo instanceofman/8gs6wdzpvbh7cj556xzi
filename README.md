@@ -14,12 +14,20 @@
 
 `[PUT] /users/:id`
 
+**Login**
+
+`[GET] /login`
+
+**Logout**
+
+`[GET] /logout`
+
 ## Run/test
 
 There are 2 users in system.
 
 **True cases**
-- Open in Postman: `http://localhost:9999/login` to loggin as user `1`
+- Open in Postman: [GET] `http://localhost:9999/login` to loggin as user `1`
 - Open in Postman: [GET] `http://localhost:9999/users/1` to get user `1` profile 
 
   => Should success
@@ -30,11 +38,11 @@ There are 2 users in system.
     => Should success
     
 **False case**
-- Open in Postman: `http://localhost:9999/logout` to logout user
+- Open in Postman: [GET] `http://localhost:9999/logout` to logout user
 - Open in Postman: [GET] `http://localhost:9999/users/1` to get user `1` profile 
 
   => Should response 401 Unauthenticated
-- Open in Postman: `http://localhost:9999/login` to loggin as user `1` again
+- Open in Postman: [GET] `http://localhost:9999/login` to loggin as user `1` again
 - Open in Postman: [GET] `http://localhost:9999/users/2` to get user `2` profile 
 
   => Should response 403 Unauthorized
